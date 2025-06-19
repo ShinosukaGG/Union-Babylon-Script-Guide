@@ -56,7 +56,7 @@ babylond keys add wallet --recover --keyring-backend test
 ```
 
 *Paste your mnemonic when prompted, or remove `--recover` to create a new one.*
-
+*Press `ENTER`*
 ---
 
 ### ✅ Create Transaction Script
@@ -133,6 +133,9 @@ do
 done
 ```
 
+*Press `CTRL+O` then `ENTER`*
+*Press `CTRL+X`*
+
 Make it executable:
 
 ```bash
@@ -145,6 +148,7 @@ chmod +x babylon.sh
 
 1. Go to: [https://app.union.build/transfer](https://app.union.build/transfer)  
 2. Complete a transfer → check explorer logs: [https://testnet.babylon.explorers.guru/](https://testnet.babylon.explorers.guru/)
+   
 3. Find the `instruction` hex and save it:
 
 ```bash
