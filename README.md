@@ -1,12 +1,12 @@
-# ?? Babylon CLI + Auto Transaction Bot Setup
+# 🎯 Union Testnet (Babylon -> Xion) Auto Transaction Bot
 
 A complete setup guide for Babylon CLI and a bash script that automates transaction sending on testnet. Works on any Ubuntu-based VPS or WSL.
 
 ---
 
-## ?? One-Shot Setup Guide
+## 🔥 One-Shot Setup Guide
 
-### ?? System Preparation
+### 🤖 System Preparation
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -15,7 +15,7 @@ sudo apt install curl iptables build-essential git wget jq make gcc nano automak
 
 ---
 
-### ?? Install Go
+### 🤖 Install Go
 
 ```bash
 cd ~
@@ -31,7 +31,7 @@ go version
 
 ---
 
-### ??️ Install Babylon CLI
+### 🤖 Install Babylon CLI
 
 ```bash
 cd ~
@@ -49,7 +49,7 @@ babylond version
 
 ---
 
-### ?? Create Wallet
+### 🔗 Create Wallet
 
 ```bash
 babylond keys add wallet --recover --keyring-backend test
@@ -59,7 +59,7 @@ babylond keys add wallet --recover --keyring-backend test
 
 ---
 
-### ?? Create Transaction Script
+### ✅ Create Transaction Script
 
 ```bash
 nano babylon.sh
@@ -74,8 +74,8 @@ CHAIN_ID="bbn-test-5"
 NODE="https://babylon-testnet-rpc.polkachu.com:443"
 SENDER="wallet"
 CONTRACT="bbn1336jj8ertl8h7rdvnz4dh5rqahd09cy0x43guhsxx6xyrztx292q77945h"
-AMOUNT="20000ubbn"
-FEES="4000ubbn"
+AMOUNT="100ubbn"
+FEES="900ubbn"
 
 while true
 do
@@ -141,7 +141,7 @@ chmod +x babylon.sh
 
 ---
 
-### ?? Create `instruction.hex`
+### 🔗 Create `instruction.hex`
 
 1. Go to: [https://app.union.build/transfer](https://app.union.build/transfer)  
 2. Complete a transfer → check explorer logs: [https://testnet.babylon.explorers.guru/](https://testnet.babylon.explorers.guru/)
@@ -161,19 +161,6 @@ bash babylon.sh
 
 ---
 
-### ✅ Wallet Tools
+✅ Working Script for Union Testnet Transactions (Babylon -> Xion), Completes upto 1000 transactions within 3hours with just 1tBaby (faucet).
 
-Check address:
-
-```bash
-babylond keys show wallet --keyring-backend test -a
-```
-
-Check balance:
-
-```bash
-babylond q bank balances <your-address> --node https://babylon-testnet-rpc.polkachu.com:443
-```
-
----
-
+📝 If any error/feedback, dm me @Shinosuka_eth on Telegram, X (Twitter), or Discord. 
