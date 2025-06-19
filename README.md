@@ -148,7 +148,7 @@ chmod +x babylon.sh
 
 1. Go to: [https://app.union.build/transfer](https://app.union.build/transfer)  
 2. Complete a transfer → check explorer logs: [https://testnet.babylon.explorers.guru/](https://testnet.babylon.explorers.guru/)
-   
+   ![Preview](./IMG_20250619_233501.jpg)
 3. Find the `instruction` hex and save it:
 
 ```bash
